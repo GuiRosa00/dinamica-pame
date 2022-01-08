@@ -245,6 +245,7 @@ header img{
   font-size: 18px;
   color: var(--gray-30);
   text-align: center;
+  max-width: 95vw;
 }
 
 
@@ -357,6 +358,7 @@ img{
     padding: 20px 0; 
   }
   .number-item + .number-item{
+    margin-left: 0;
     margin-top: 20px;
   }
   footer{
