@@ -1,3 +1,14 @@
+:root{
+  --gray-15: #f3f3f3;
+  --gray-20: #f2f2f2;
+  --gray-30: #d6d6d6;
+  --gray-50: #2e2a2a;
+  --gray-70: #141414;
+  --black: #000000; 
+  --white: #ffffff;
+  --pink: #dd33dd;
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -7,8 +18,8 @@
 body{
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
-  background: #2e2a2a;
-  color: #f2f2f2;
+  background: var(--gray-50);
+  color: var(--gray-20);
 }
 
 .container{
@@ -25,7 +36,7 @@ body{
 
 header{
   height: 80px;
-  background-color: #000000;
+  background-color: var(--black);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -44,8 +55,9 @@ nav{
   justify-content: flex-end;
 }
 
-img{
-  height: 80px;
+
+header img{
+  height: 30px;
 }
 
 #menu{
@@ -63,7 +75,7 @@ img{
 }
 
 .menu-item > a {
-  color: #F58334;
+  color: var(--pink);
   text-decoration: none;
 }
 .menu-item::after{
@@ -71,7 +83,7 @@ img{
   display: block;
   width: 0;
   height: 2px;
-  background-color: #F58334;
+  background-color: var(--pink);
   transition: width .2s;
 }
 
@@ -116,7 +128,7 @@ img{
 #banner > h1{
   font-size: 40px;
   font-weight: 600;
-  color: #ffffff;
+  color: var(--white);
   margin-bottom: 20px;
   text-align: center;
   width: 550px;
@@ -124,19 +136,19 @@ img{
 
 #banner > p{
   font-size: 18px;
-  color: #ffffff;
+  color: var(--white);
   text-align: center;
   width: 550px;
   margin-bottom: 30px;
 }
 
 #banner > p > span{
-  color: #F58334;
+  color: var(--pink);
 }
 
 #banner > button{
-  background-color: #F58334;
-  color: #ffffff;
+  background-color: var(--pink);
+  color: var(--white);
   font-size: 14px;
   font-weight: 600;
   padding: 20px;
@@ -161,14 +173,14 @@ img{
 #services > h2{
   font-size: 32px;
   font-weight: 600;
-  color: #FFF;
+  color: var(--white);
   margin-bottom: 10px;
   text-align: center;
   width: 550px;
 }
 
 #services > p{
-  color: #d6d6d6;
+  color: var(--gray-30);
   font-size: 18px;
 }
 
@@ -186,7 +198,7 @@ img{
 .service-item{
   width: 200px;
   height: 300px;
-  border: 2px solid #F58334;
+  border: 2px solid var(--pink);
   border-radius: 20px;
 
   display: flex;
@@ -208,7 +220,7 @@ img{
   height: 300px;
   display: flex;
   justify-content: space-evenly;
-  background-color: rgb(19, 19, 19);
+  background-color: var(--gray-70);
 }
 
 
@@ -221,12 +233,12 @@ img{
 
 .number-item h1{
   font-size: 72px;
-  color: #F58334;
+  color: var(--pink);
 }
 
 .number-item h3{
   font-size: 18px;
-  color: #d6d6d6;
+  color: var(--gray-30);
   text-align: center;
 }
 
@@ -248,13 +260,13 @@ img{
 #talk-to-us > h1{
   font-size: 40px;
   font-weight: 600;
-  color: #FFF;
+  color: var(--white);
   margin-bottom: 10px;
   text-align: center;
 }
 
 #talk-to-us > p{
-  color: #d6d6d6;
+  color: var(--gray-30);
   font-size: 18px;
   text-align: center;
 }
@@ -273,7 +285,7 @@ img{
 }
 
 .contact > a{
-  color: #F58334;
+  color: var(--pink);
   margin-top: 10px;
   text-decoration: none;
 }
@@ -283,17 +295,6 @@ img{
   filter: brightness(1.1);
 }
 
-@media(max-width: 768px){
-  #numbers{
-    flex-direction: column;
-    align-items: center;
-    height: auto;
-    padding: 20px 0; 
-  }
-  .number-item + .number-item{
-    margin-top: 20px;
-  }
-}
 
 footer{
   width: 100%;
@@ -323,12 +324,30 @@ footer > p{
 }
 
 footer > p > span, small{
-  color: #f3f3f3;
+  color: var(--gray-15);
   transition: color .2s;
   cursor: pointer;
 }
 
 footer > p > span:hover, small:hover{
-  color: #F58334;
+  color: var(--pink);
 }
 
+img{
+  height: 80px;
+}
+
+@media(max-width: 768px){
+  nav{
+    display: none;
+  }
+  #numbers{
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 20px 0; 
+  }
+  .number-item + .number-item{
+    margin-top: 20px;
+  }
+}
