@@ -55,12 +55,16 @@ img{
   list-style: none;
 }
 .menu-item{
-  color: #F58334;
   font-size: 18px;
   cursor: pointer;
   font-weight: 600;
   transition: filter .2s;
   padding: 3px;
+}
+
+.menu-item > a {
+  color: #F58334;
+  text-decoration: none;
 }
 .menu-item::after{
   content: '';
@@ -77,6 +81,10 @@ img{
 
 .menu-item:hover{
   filter: brightness(1.2);
+}
+
+.menu-item.selected::after{
+  width: 100%;
 }
 
 .menu-item + .menu-item{
@@ -285,5 +293,42 @@ img{
   .number-item + .number-item{
     margin-top: 20px;
   }
+}
+
+footer{
+  width: 100%;
+  background-color: rgb(19, 19, 19);
+  display: flex;
+  flex-direction: column;
+  padding: 30px 50px;
+}
+
+#footer-icons{
+  margin-bottom: 20px;
+}
+#footer-icons > a+a{
+  margin-left: 10px;
+}
+#footer-icons > a >img{
+  width: 25px;
+  height: 25px;
+}
+
+
+
+footer > p{
+  color: #afaeae;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+footer > p > span, small{
+  color: #f3f3f3;
+  transition: color .2s;
+  cursor: pointer;
+}
+
+footer > p > span:hover, small:hover{
+  color: #F58334;
 }
 
