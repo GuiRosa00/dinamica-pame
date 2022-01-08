@@ -132,6 +132,7 @@ header img{
   margin-bottom: 20px;
   text-align: center;
   width: 550px;
+  max-width: 95vw;
 }
 
 #banner > p{
@@ -139,6 +140,7 @@ header img{
   color: var(--white);
   text-align: center;
   width: 550px;
+  max-width: 95vw;
   margin-bottom: 30px;
 }
 
@@ -177,11 +179,14 @@ header img{
   margin-bottom: 10px;
   text-align: center;
   width: 550px;
+  max-width: 95vw;
 }
 
 #services > p{
   color: var(--gray-30);
   font-size: 18px;
+  text-align: center;
+  max-width: 95vw;
 }
 
 #services-items{
@@ -190,7 +195,7 @@ header img{
   flex-wrap: wrap;
   justify-content: center;
   gap: 40px;
-
+  max-width: 95vw;
 }
 
 
@@ -269,6 +274,7 @@ header img{
   color: var(--gray-30);
   font-size: 18px;
   text-align: center;
+  max-width: 95vw;
 }
 
 
@@ -338,6 +344,9 @@ img{
 }
 
 @media(max-width: 768px){
+  .header-container{
+    justify-content: center;
+  }
   nav{
     display: none;
   }
@@ -349,5 +358,17 @@ img{
   }
   .number-item + .number-item{
     margin-top: 20px;
+  }
+  footer{
+    padding: 20px;
+  }
+
+  #talk-to-us{
+    height: auto;
+    padding: 20px 0;
+  }
+
+  #contacts{
+    flex-direction: column;
   }
 }
