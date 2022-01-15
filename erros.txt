@@ -1,6 +1,11 @@
 Colocar body com width: 1200px
-Tirar o display: flex do menu de navegação
-Trocar a tag header por head
+Tirar o display: flex do menu de navegação (mas deixar as outras estilizações (align-items ...))
+Trocar a tag header por head, ou vice versa
+Utilizar uma fonte que teria que ser importada
 Repitir ids dos itens da carta
 Retirar o url no banner, passar só o endereço pra imagem
+Retira o flex-wrap dos itens da carta
+Retira o fechamento da section dos numbers
+Margin-left: 600px na navegação
+Retira o px do media query
 Trocar href por src no link que chama o css

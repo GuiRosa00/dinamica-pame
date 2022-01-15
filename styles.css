@@ -42,12 +42,13 @@ header{
 .header-container{
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   width: 100%;
 }
 
 nav{
    display: flex;
+   margin-left: 600px;
   justify-content: flex-end;
 }
 
@@ -188,7 +189,6 @@ header img{
 #services-items{
   margin-top: 30px;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   gap: 40px;
   max-width: 95vw;
@@ -341,7 +341,7 @@ img{
   height: 80px;
 }
 
-@media(max-width: 768px){
+@media(max-width: 768){
   .header-container{
     justify-content: center;
   }
