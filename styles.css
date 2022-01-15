@@ -146,6 +146,7 @@ header img{
 
 #banner > p > span{
   color: var(--pink);
+  font-weight: 700;
 }
 
 #banner > button{
