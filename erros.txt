@@ -1,0 +1,6 @@
+Colocar body com width: 1200px
+Tirar o display: flex do menu de navegação
+Trocar a tag header por head
+Repitir ids dos itens da carta
+Retirar o url no banner, passar só o endereço pra imagem
+Trocar href por src no link que chama o css

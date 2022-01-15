@@ -20,11 +20,7 @@ body{
   font-size: 16px;
   background: var(--gray-50);
   color: var(--gray-20);
-}
-
-.container{
-  width: 100%;
-  margin: 0 auto;
+  width: 1200px;
 }
 
 .content{
@@ -51,7 +47,7 @@ header{
 }
 
 nav{
-  display: flex;
+   display: flex;
   justify-content: flex-end;
 }
 
@@ -61,7 +57,6 @@ header img{
 }
 
 #menu{
-  display: flex;
   justify-content: flex-end;
   align-items: center;
   list-style: none;
@@ -120,7 +115,7 @@ header img{
   height: 500px;
   opacity: .4; 
   z-index: -1;
-  background: url("https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  background-image: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80";
   background-size: cover;
 }
 
@@ -201,7 +196,7 @@ header img{
 
 
 
-.service-item{
+#service-item{
   width: 200px;
   height: 300px;
   border: 2px solid var(--pink);
@@ -214,7 +209,7 @@ header img{
 }
 
 
-.service-item > p{
+#service-item > p{
   width: 180px;
   text-align: center;
   margin-top: 20px;
