@@ -146,6 +146,7 @@ header img{
 
 #banner > p > span{
   color: var(--pink);
+  filter: brightness(1.2);
   font-weight: 700;
 }
 
